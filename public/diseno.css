@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Página completa */
+body {
+  font-family: "Times New Roman", Times, serif;
+  background: linear-gradient(135deg, #b30000, #e91e63, #ff9a9e);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 15px;
+  color: #4a1a1a;
+}
+
+/* Contenedor principal */
+.container {
+  width: 100%;
+  max-width: 750px;
+  background: rgba(255, 255, 255, 0.96);
+  padding: 35px;
+  border-radius: 25px;
+  box-shadow: 0 15px 40px rgba(80, 0, 20, 0.35);
+  text-align: center;
+}
+
+/* Título */
+h1 {
+  color: #a3002b;
+  font-size: 32px;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+/* Contenedor de la cámara */
+.camera-container {
+  background: #1f1f1f;
+  padding: 10px;
+  border-radius: 20px;
+  border: 4px solid #e91e63;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(120, 0, 30, 0.3);
+}
+
+/* Webcam */
+video {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+}
+
+/* Canvas oculto */
+canvas {
+  display: none;
+}
+
+/* Controles */
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 25px 0;
+}
+
+/* Botones */
+button {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, #c40035, #e91e63);
+  border: none;
+  border-radius: 12px;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 5px 12px rgba(160, 0, 50, 0.25);
+}
+
+/* Efecto al pasar el mouse */
+button:hover {
+  background: linear-gradient(135deg, #a0002b, #c2185b);
+  transform: translateY(-2px);
+  box-shadow: 0 7px 16px rgba(160, 0, 50, 0.35);
+}
+
+/* Vista previa */
+#photo {
+  max-width: 100%;
+  border-radius: 18px;
+  margin-top: 15px;
+  border: 4px solid #f48fb1;
+  box-shadow: 0 8px 20px rgba(120, 0, 30, 0.2);
+}
+
+/* Formulario del correo */
+.email-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Campo del correo */
+input[type="email"] {
+  flex: 1;
+  min-width: 250px;
+  padding: 13px 15px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+  border: 2px solid #f48fb1;
+  border-radius: 12px;
+  outline: none;
+  color: #4a1a1a;
+  background: #fff7fa;
+}
+
+/* Campo seleccionado */
+input[type="email"]:focus {
+  border-color: #d81b60;
+  box-shadow: 0 0 8px rgba(216, 27, 96, 0.25);
+}
+
+/* Mensaje */
+#message {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #a3002b;
+}
